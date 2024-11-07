@@ -1,0 +1,16 @@
+{
+    "version":2,
+    "builds":[
+        {
+            "srs":"./index.js",
+            "use":"@vercel/node"
+        }
+    ],
+    "routers":[
+        {
+            "srs":"/(.*)",
+            "dest":"/",
+            "methods":["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
+        }
+    ]
+}
